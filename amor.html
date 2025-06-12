@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Dia dos Namorados</title>
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 30px;
+      color: #8b0000;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .heart {
+      color: red;
+      font-size: 2em;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    .message {
+      max-width: 600px;
+      margin: 30px auto;
+      background: #ffe4e1;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .slider {
+      max-width: 600px;
+      margin: 30px auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 12s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { margin-left: 0%; }
+      33% { margin-left: -100%; }
+      66% { margin-left: -200%; }
+      100% { margin-left: 0%; }
+    }
+
+    .signature {
+      margin-top: 40px;
+      font-style: italic;
+      font-size: 1.2em;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    audio {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="heart">❤️</div>
+  <h1>Feliz Dia dos Namorados!</h1>
+
+  <div class="message">
+    <p>Hoje é um daqueles dias que me faz lembrar o quanto sou sortudo por ter você na minha vida.</p>
+    <p>Entre todos os multiversos, entre todas as possibilidades, te escolheria de novo — sempre.</p>
+    <p>Te amo mais do que palavras podem expressar. Obrigado por ser meu amor, minha parceira, minha melhor amiga.</p>
+  </div>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="foto1.jpg" alt="Foto 1">
+      <img src="foto2.jpg" alt="Foto 2">
+      <img src="foto3.jpg" alt="Foto 3">
+    </div>
+  </div>
+
+  <audio controls autoplay loop>
+    <source src="musica.mp3" type="audio/mp3">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <div class="signature">
+    Com todo meu amor,<br>
+    <strong>Seu eterno apaixonado 💘</strong>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 | Para o amor da minha vida
+  </div>
+
+</body>
+</html>
