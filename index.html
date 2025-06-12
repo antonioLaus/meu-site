@@ -1,84 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Feliz Dia dos Namorados</title>
-  <style>
-    body {
-      background: #fff0f5;
-      font-family: 'Segoe UI', sans-serif;
-      text-align: center;
-      padding: 30px;
-      color: #8b0000;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-
-    .heart {
-      color: red;
-      font-size: 2em;
-      animation: beat 1s infinite;
-    }
-
-    @keyframes beat {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-    }
-
-    .message {
-      max-width: 600px;
-      margin: 30px auto;
-      background: #ffe4e1;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .slider {
-      max-width: 600px;
-      margin: 30px auto;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-
-    .slides {
-      display: flex;
-      width: 300%;
-      animation: slide 12s infinite;
-    }
-
-    .slides img {
-      width: 100%;
-      object-fit: cover;
-    }
-
-    @keyframes slide {
-      0% { margin-left: 0%; }
-      33% { margin-left: -100%; }
-      66% { margin-left: -200%; }
-      100% { margin-left: 0%; }
-    }
-
-    .signature {
-      margin-top: 40px;
-      font-style: italic;
-      font-size: 1.2em;
-    }
-
-    .footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #666;
-    }
-
-    audio {
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="C:\Users\antonio.laus\Desktop\DIA DOS NAMORADOS\style.css">
 </head>
 <body>
 
@@ -91,27 +16,32 @@
     <p>Te amo mais do que palavras podem expressar. Obrigado por ser meu amor, minha parceira, minha melhor amiga.</p>
   </div>
 
-  <div class="slider">
-    <div class="slides">
-      <img src="foto1.jpg" alt="Foto 1">
-      <img src="foto2.jpg" alt="Foto 2">
-      <img src="foto3.jpg" alt="Foto 3">
-    </div>
+  <div class="slider" id="slider">
+    <img src="C:\Users\antonio.laus\Desktop\DIA DOS NAMORADOS\IMG\imagem1.jpg" alt="Foto 1" class="active" />
+    <img src="C:\Users\antonio.laus\Desktop\DIA DOS NAMORADOS\IMG\imagem2.jpg" alt="Foto 2" />
+    <img src="C:\Users\antonio.laus\Desktop\DIA DOS NAMORADOS\IMG\imagem6.jpg" alt="Foto 6" />
+    <img src="C:\Users\antonio.laus\Desktop\DIA DOS NAMORADOS\IMG\imagem9.jpg" alt="Foto 9" />
+    <img src="C:\Users\antonio.laus\Desktop\DIA DOS NAMORADOS\IMG\imagem10.jpg" alt="Foto 10" />
+    <img src="C:\Users\antonio.laus\Desktop\DIA DOS NAMORADOS\IMG\imagem11.jpg" alt="Foto 11" />
+  </div>
+
+  <div class="buttons">
+    <button onclick="prevSlide()">Anterior</button>
+    <button onclick="nextSlide()">Próximo</button>
   </div>
 
   <audio controls autoplay loop>
-    <source src="musica.mp3" type="audio/mp3">
+    <source src="C:\Users\antonio.laus\Desktop\DIA DOS NAMORADOS\IMG\musica.opus" type="audio/mp3" />
     Seu navegador não suporta áudio.
   </audio>
 
   <div class="signature">
-    Com todo meu amor,<br>
+    Com todo meu amor,<br />
     <strong>Seu eterno apaixonado 💘</strong>
   </div>
 
-  <div class="footer">
-    &copy; 2025 | Para o amor da minha vida
-  </div>
+  <div class="footer">&copy; 2025 | Para o amor da minha vida</div>
 
+  <script src="C:\Users\antonio.laus\Desktop\DIA DOS NAMORADOS\script.js"></script>
 </body>
 </html>
